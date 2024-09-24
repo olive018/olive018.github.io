@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kind Message</title>
+    <script>
+        function DisplayMsg() {
+            const messages = [
+                "You are amazing just the way you are!",
+                "Believe in yourself, you are stronger than you think!",
+                "Your smile brightens the day!",
+                "You have the power to create change!",
+                "Kindness is your superpower!"
+            ];
+            const randomMsg = messages[Math.floor(Math.random() * messages.length)];
+            document.getElementById('message').innerText = randomMsg;
+        }
+    </script>
+</head>
+<body onload="DisplayMsg()">
+    <h1 id="message"></h1>
+</body>
+</html>
