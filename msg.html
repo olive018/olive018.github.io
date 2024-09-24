@@ -12,46 +12,52 @@
                 "Your smile brightens the day! :]",
                 "You have the power to create change! :]",
                 "Kindness is your superpower! :]",
-				"We are all made of stardust,but your's is extra sparkly :]",
-				"This is a good week to have a good week :]",
-				"Your weirdness is your super power :]",
-				"Stop. Take a minute and BREATHE :]",
-				"Create your own happy place :]",
-				"You are the best you can, and I'm so proud of you! :]",
-				"Ghost hug! You can't feel it but its there :]",
-				"You are the brightest star! :]",
-				"You have a cute smile. Smile more! :]",
-				"You are pawsitively purrrfect! :]"
+                "We are all made of stardust, but yours is extra sparkly! :]",
+                "This is a good week to have a good week! :]",
+                "Your weirdness is your superpower! :]",
+                "Stop. Take a minute and BREATHE! :]",
+                "Create your own happy place! :]",
+                "You are the best you can be, and I'm so proud of you! :]",
+                "Ghost hug! You can't feel it but it's there! :]",
+                "You are the brightest star! :]",
+                "You have a cute smile. Smile more! :]",
+                "You are pawsitively purrrfect! :]"
             ];
             const randomMsg = messages[Math.floor(Math.random() * messages.length)];
             document.getElementById('message').innerText = randomMsg;
         }
     </script>
 	
-	<style>
-		.container {
-			width: 50%; 
-			background-color: white;
-			margin: 0 auto; 
-			margin-top: 100px; 
-			border-radius: 8px; 
-			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-		}
+    <style>
+        .container {
+            width: 50%; 
+            background-color: white;
+            margin: 0 auto; 
+            margin-top: 100px; 
+            padding: 20px; /* Add padding to make it more prominent */
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            text-align: center; /* Center the text */
+        }
 
-		body {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			height: 100vh; 
-			background-color: #f8f8f8; 
-			margin: 0; 
-		}
-	</style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            background-color: #f8f8f8; 
+            margin: 0; 
+        }
 
+        h1 {
+            font-size: 1.5em; /* Adjust font size for better visibility */
+            color: #333; /* Set a darker color for the text */
+        }
+    </style>
 </head>
 <body onload="DisplayMsg()">
-	<div class="container">
-		<h1 id="message"></h1>
-	</div>
+    <div class="container">
+        <h1 id="message"></h1>
+    </div>
 </body>
 </html>
